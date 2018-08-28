@@ -1,8 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-const Index = () => {
-  return <div>Hello React change!</div>;
-};
+const render = () =>
+  ReactDOM.render(
+    <div>
+      <App/>
+    </div>,
+    document.getElementById('index'));
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+render();
+registerServiceWorker();
