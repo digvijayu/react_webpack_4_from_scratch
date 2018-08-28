@@ -1,0 +1,36 @@
+{
+  "name": "boiler-plate-react-webpack-4",
+  "version": "1.0.0",
+  "description": "A boilerplate repository for creating react application with webpack 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --display-error-details",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digvijayu/react_webpack_4_from_scratch.git"
+  },
+  "author": "Digvijay Upadhyay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digvijayu/react_webpack_4_from_scratch/issues"
+  },
+  "homepage": "https://github.com/digvijayu/react_webpack_4_from_scratch#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
