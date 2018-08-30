@@ -1,0 +1,5 @@
+{
+    "Home.title": "Home Page (loaded from en.json)",
+    "Home.input": "Write a name and check it in SomePage Link.(loaded from en.json)",
+    "Home.stateText": "You typed: {text} (loaded from en.json)"
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { textChange } from '../Actions';
+import { FormattedMessage } from 'react-intl'
 
 class Home extends Component {
   render() {
@@ -8,9 +9,17 @@ class Home extends Component {
     return (
       <div>
         <h2>
-          Home Page
+          <FormattedMessage
+            id="Home.title"
+            defaultMessage="Home Page"
+          />
         </h2>
-        <div>Write a name and check it in SomePage Link</div>
+        <div>
+          <FormattedMessage
+            id="Home.input"
+            defaultMessage="Write a name and check it in SomePage Link"
+          />
+        </div>
         <input
           type="text"
           onChange={e =>
@@ -23,7 +32,11 @@ class Home extends Component {
           }}
         />
         <div>
-          You typed: {this.props.text}
+          <FormattedMessage
+            id="Home.stateText"
+            defaultMessage="You typed: {text}"
+            values={{text: <b>{this.props.text}</b>}}
+          />
         </div>
       </div>
     );
